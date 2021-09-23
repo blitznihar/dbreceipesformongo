@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  mongovirt:
+    image: mongo:latest
+    container_name: mongovirt
+    hostname: mongovirt
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./.setup/data/mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
+      - ./.setup/data/create-mongo-user.js:/tmp/create-mongo-user.js
+      - ./.setup/data/sampledata-restaurant.json:/tmp/sampledata-restaurant.json
+    command: ["--bind_ip","0.0.0.0"]
+  dbreceipesformongoapi:
+    build: .
+    container_name: dbreceipesformongoapi
+    hostname: dbreceipesformongoapi
+    restart: unless-stopped
+    environment:
+      SPRING_DATA_MONGO_URL: mongodb://admin:password@mongovirt:27017/restaurant?authSource=admin&readPreference=primary&ssl=false
+    ports:
+      - "18001:18001"
+      - "15001:15001"
+    depends_on: 
+      - mongovirt
