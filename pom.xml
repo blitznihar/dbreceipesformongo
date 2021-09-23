@@ -9,6 +9,13 @@
 		<relativePath/>
 		<!-- lookup parent from repository -->
 	</parent>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/blitznihar/dbreceipes</url>
+		</repository>
+	</distributionManagement>
 	<groupId>com.blitznihar.dbreceipes.formongo</groupId>
 	<artifactId>dbreceipesformongo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -69,7 +76,7 @@
 			<groupId>de.flapdoodle.embed</groupId>
 			<artifactId>de.flapdoodle.embed.mongo</artifactId>
 			<scope>test</scope>
-		  </dependency>
+		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>
