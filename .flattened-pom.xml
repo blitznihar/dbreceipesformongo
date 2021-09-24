@@ -10,7 +10,7 @@
   </parent>
   <groupId>com.blitznihar.dbreceipes.formongo</groupId>
   <artifactId>dbreceipesformongo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>dbreceipesformongo</name>
   <description>Demo project for Spring Boot</description>
   <licenses>
@@ -23,7 +23,7 @@
     <repository>
       <id>github</id>
       <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/blitznihar/dbreceipes</url>
+      <url>https://maven.pkg.github.com/blitznihar/dbreceipesformongo</url>
     </repository>
   </distributionManagement>
   <properties>
