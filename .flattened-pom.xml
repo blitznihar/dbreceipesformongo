@@ -19,6 +19,13 @@
       <url>https://www.apache.org/licenses/LICENSE-2.0</url>
     </license>
   </licenses>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/blitznihar/dbreceipes</url>
+    </repository>
+  </distributionManagement>
   <properties>
     <java.version>8</java.version>
   </properties>

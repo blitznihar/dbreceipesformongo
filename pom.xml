@@ -13,7 +13,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/blitznihar/dbreceipes</url>
+			<url>https://maven.pkg.github.com/blitznihar/dbreceipesformongo</url>
 		</repository>
 	</distributionManagement>
 	<groupId>com.blitznihar.dbreceipes.formongo</groupId>
